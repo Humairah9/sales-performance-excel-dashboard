@@ -18,7 +18,7 @@ Using Microsoft Excel, I analysed company sales data to uncover insights on reve
 
 ## Dashboard Preview
 
-![Sales Performance Dashboard](image/Sales%20Performance%20Dashboard.png)
+![Sales Performance Dashboard](image/Sale%20Performance%20Dashboard.png)
 
 ## Introduction
 
