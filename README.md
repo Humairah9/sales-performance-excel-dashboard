@@ -13,13 +13,12 @@ Using Microsoft Excel, I analysed company sales data to uncover insights on reve
 - [Conclusion](#conclusion)
 - [Recommendations](#recommendations)
 - [Assumptions and Limitations](#assumptions-and-limitations)
+- [How to View the Dashboard](#how-to-view-the-dashboard)
 - [Tools and Repository Structure](#tools-and-repository-structure)
 
 ## Dashboard Preview
 
-![Sales Performance Dashboard](images/dashboard.png)
-
-*[Replace with a fresh screenshot taken after Refresh All, so the Payment and Salesperson charts match this README.]*
+![Sales Performance Dashboard](image/Sales%20Performance%20Dashboard.png)
 
 ## Introduction
 
@@ -63,19 +62,15 @@ The analysis uses one sales table, with one row per order. After cleaning, the d
 | **Order Value Category** | *New column:* High Value or Standard |
 | **Profit Status** | *New column:* High Profit or Standard Profit |
 
-*[Check this table against your workbook's column headings and edit if any differ.]*
-
 ## Data Cleaning and Preparation
 
-The cleaned dataset from Week 1 is the starting point for this analysis.
+The cleaned dataset from the previous stage is the starting point for this analysis. The following issues were handled:
 
 | Issue | Treatment |
 |---|---|
 | Order ORD035 had no payment method (shown as "Unknown") | Classified as **Card**, the most common method for Retail Electronics orders (5 of 8). Affects 1.8% of revenue |
 | Orders ORD033, ORD034 and ORD045 have ship dates earlier than their order dates | Flagged in an *Invalid Ship Date* column and kept in all totals |
 | Order ORD004 showed different salespeople in the data and the PivotTables | Corrected to **Tolu**, as recorded in the Sales sheet, and PivotTables refreshed |
-
-*[Add any other Week 1 cleaning steps here, such as duplicates removed, blanks filled or text standardised.]*
 
 ## Calculated Columns and Formulas
 
@@ -118,7 +113,7 @@ The company recorded **₦43.25M** in revenue and **₦9.37M** in profit from **
 
 **Method:** A bar chart shows total revenue for each category, from a PivotTable on Category.
 
-Electronics lead with ₦23.8M (55.0% of revenue), followed by Furniture at ₦10.2M and Accessories at ₦9.3M. Revenue alone is misleading here. Electronics earn only 15.6% margin and 39.7% of profit, while Accessories earn 36.0% margin and 35.6% of profit.
+Electronics lead with ₦23.8M (55.0% of revenue), followed by Furniture at ₦10.2M and Accessories at ₦9.3M. Revenue alone is misleading here. Electronics earn only a 15.6% margin and 39.7% of profit, while Accessories earn a 36.0% margin and 35.6% of profit.
 
 ### 3. Top 5 Products by Revenue
 
@@ -191,7 +186,8 @@ The company is growing and profitable, with a 21.7% margin on ₦43.25M of reven
 ## How to View the Dashboard
 
 - **Quick look:** see the screenshot above.
-- **Full file:** download the `.xlsx` from the `excel/` folder and open it in Microsoft Excel. The slicer and PivotCharts need desktop Excel.
+- **Full report:** [Download the report as PDF](Sales_Performance_Report.pdf)
+- **Full file:** download the workbook from the [`excel`](excel) folder and open it in Microsoft Excel. The slicer and PivotCharts need desktop Excel.
 
 ## Tools and Repository Structure
 
@@ -200,11 +196,11 @@ The company is growing and profitable, with a 21.7% margin on ₦43.25M of reven
 ```
 .
 ├── README.md
-├── excel/      # Excel workbook with the dashboard
-├── report/     # full written report (Word)
-└── images/     # dashboard screenshots
+├── Sales_Performance_Report.pdf   # full written report
+├── excel/                         # Excel workbook with the dashboard
+└── image/                         # dashboard screenshot
 ```
 
 ## Author
 
-Aisha Hamza | [LinkedIn]([add link]) | [Email]([add email])
+Aisha Hamza | [LinkedIn](https://www.linkedin.com/in/aisha-hamza-a21188187/) | [Email](mailto:hamzaaisha798@gmail.com)
