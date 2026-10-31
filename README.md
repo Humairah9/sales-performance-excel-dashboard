@@ -1,4 +1,4 @@
-# Sales Performance Dashboard
+# Sales Performance Insights
 
 Using Microsoft Excel, I analysed company sales data to uncover insights on revenue, profit, product performance, regional sales, salesperson results and payment behaviour. I cleaned the dataset, added calculated columns and conditional aggregations, built 14 PivotTables and PivotCharts, and designed an interactive dashboard with a City slicer that answers key questions about how the business is performing.
 
